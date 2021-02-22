@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title></title>
+    <link href="/2021/02/22/%E6%A8%A1%E5%9D%97%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/"/>
+    <url>/2021/02/22/%E6%A8%A1%E5%9D%97%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/</url>
+    
+    <content type="html"><![CDATA[<p>###模块缓存机制</p><p>模块在第一次加载后会被缓存, 如果每次调用 require(‘foo’) 都解析到同一文件，则返回相同的对象,</p><p>  不会导致模块的代码被执行多次</p><p>####核心模块加载机制</p><p> require() 总是会优先加载核心模块, 比如 require(‘http’) 始终返回内置的 HTTP 模块，即使有同名文件</p><p>####自定义模块加载机制</p><p>   1.使用 require() 方法去加载自定义模块，必须指定路径格式，否则node 会默认把它当作是一个核心模块或来自 node_modules 目录下的第三方模块</p><ol start="2"><li><p>如果按确切的文件名没有找到模块，则 Node.js 会尝试带上 .js、 .json 或 .node 拓展名再加载</p></li><li><p>在加载的目录下查找 package.json 的文件, 并寻找 main 属性作为 require 的入口，如果找不到, Node.js 将会试图加载目录下的 index.js 或 index.node 文件</p><p>####第三方模块加载方式</p></li></ol><p>如果传递给 require() 的模块标识符不是一个核心模块，也没有以 ‘/‘ 、 ‘../‘ 或 ‘./‘ 开头，</p><p>  那么 Node.js 会从当前模块的父目录开始，尝试从它的 /node_modules 目录里加载模块。如果还是没有找到，</p><p>  则移动到再上一层父目录，直到文件系统的根目录。</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>加油，奥利给</title>
     <link href="/2021/01/28/hello-world/"/>
     <url>/2021/01/28/hello-world/</url>
