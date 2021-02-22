@@ -5,6 +5,19 @@
   
   <entry>
     <title></title>
+    <link href="/2021/02/22/npm%20%E5%AF%86%E4%BB%A4/"/>
+    <url>/2021/02/22/npm%20%E5%AF%86%E4%BB%A4/</url>
+    
+    <content type="html"><![CDATA[<p>#####1.npm -v  查看 npm 的版本</p><h5 id="2-安装包方法-npm-install-XXX-包名"><a href="#2-安装包方法-npm-install-XXX-包名" class="headerlink" title="2. 安装包方法 npm install XXX(包名)"></a>2. 安装包方法 npm install XXX(包名)</h5><p>1.项目包</p><p>a.[开发依赖包] 开发测试环境用到的依赖包：npm i -D 包名称</p><p>b.- [核心依赖包] 线上环境用到的依赖包： npm i 包名称</p><p>2.全局包</p><p>a.安装命令： npm i -g 包名称</p><p>b.卸载命令： npm uninstall -g 包名称</p><h5 id="3-npm-init-y-：-产生一个package-json文件"><a href="#3-npm-init-y-：-产生一个package-json文件" class="headerlink" title="3.npm init -y ： 产生一个package.json文件"></a>3.npm init -y ： 产生一个package.json文件</h5><ol><li>dependencies: 在生产环境中所需要的软件包</li><li> devDependencies: 仅本地开发和测试所需要的软件包</li></ol><p>#####4.安装开发测试阶段用到的包，npm i -D 包名称@版本号</p><p>#####5.切换下载包服务器 在任意目录下依次执行：<code>npm i -g nrm</code> ==&gt; <code>nrm ls</code> ==&gt;<code>nrm use taobao</code></p><h5 id="6-发布自己的包"><a href="#6-发布自己的包" class="headerlink" title="6.发布自己的包"></a>6.发布自己的包</h5><p>1.在包的发布目录下面执行命令<code>npm publish</code></p><p>2.删除已经发布的包 <code>npm unpublish 包名称 --force</code></p><h5 id="7-卸载安装的包-npm-uninstall-XXX-包名"><a href="#7-卸载安装的包-npm-uninstall-XXX-包名" class="headerlink" title="7.卸载安装的包  npm uninstall XXX(包名)"></a>7.卸载安装的包  npm uninstall XXX(包名)</h5>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
     <link href="/2021/02/22/%E6%A8%A1%E5%9D%97%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/"/>
     <url>/2021/02/22/%E6%A8%A1%E5%9D%97%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/</url>
     
